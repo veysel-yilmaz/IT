@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANKAGEO</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"/> -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+
+</head>
+
+<body>
+    <!-- ????????????? kutular ve text aynı hizada değil -->
+
+    <div class="title">
+        <img src="title.png" alt="title" style="margin-top: 1%; margin-bottom: 1%;">
+    </div>
+    <div class="main">
+        <div class="input">
+            <div class="text">
+                <div>ID:</div><br>
+                <div>First Name:</div><br>
+                <div>Last Name:</div><br>
+                <div>ID Number:</div><br>
+                <div>Phone Number:</div><br>
+                <div>Lütfen '*' alanları eksiksiz şekilde doldurunuz.</div>
+
+            </div>
+            <div class="boxes">
+                <div>* <button class="createID" onclick="add();">Create ID</button></div><br>
+                <div><input id="name" placeholder="enter your name"></div><br>
+                <div><input id="lastName" placeholder="enter your last name"></div><br>
+                <div><input id="idNumber" placeholder="enter your id number"></div><br>
+                <div><input id="phoneNumber" placeholder="enter your phone number"></div><br>
+                <div class="send"><button>Send</button></div>
+            </div>
+
+        </div>
+
+        <div class="output">
+            <div class="text">
+                <div>ID:</div><br>
+                <div>First Name:</div><br>
+                <div>Last Name:</div><br>
+                <div>ID Number:</div><br>
+                <div>Phone Number:</div><br>
+            </div>
+            <div class="boxes">
+                <p id="createID"></p>
+                <p id="name"></p>
+                <p id="lastName"></p>
+                <p id="idNumber"></p>
+                <p id="phoneNumber"></p>
+            </div>
+        </div>
+    </div>
+    <div style="margin:2%; display: flex; justify-content: center; height: 100%;">
+        <div class="footer">
+            <div class="footerTop">
+                <div class="topLeftFooter">
+                    <div>DATABASE</div>
+                </div>
+
+                <div class="topRightFooter">
+                    <div>
+                        <input id="number&id" placeholder="NO&ID">
+                        <button class="delete1" onclick="delete1();">DELETE</button>
+                        <button class="delete2" onclick="delete2();">DELETE ALL</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footerBottom">
+                <table id="table">
+                    <tr>
+                        <th>NO</th>
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>LAST NAME</th>
+                        <th>ID NUMBER</th>
+                        <th>PHONE NUMBER</th>
+                    </tr>
+                    <tr>
+                        <td><input type="number"> </td>
+                        <td><input type="number"></td>
+                        <td><input name="name"> </td>
+                        <td><input name="lastName"></td>
+                        <td><input type="number" name="idNumber"></td>
+                        <td><input type="number" name="phoneNumber"></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
