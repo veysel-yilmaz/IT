@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+
+        body {
+            background-color: wheat;
+            height: 100%;
+
+        }
+
+        .main {
+
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .input {
+            background-color: cadetblue;
+            border: 3px solid brown;
+            width: 45%;
+            height: 45%;
+            display: flex;
+            justify-content: center;
+
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .output {
+            background-color: brown;
+            border: 3px solid cadetblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            width: 45%;
+            height: 100%;
+        }
+
+        .cont {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .submitButton {
+            background-color: whitesmoke;
+
+            font-size: medium;
+            width: 30%;
+        }
+
+        .deleteButton {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            font-size: medium;
+            width: 30%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="input">
+
+            <div>First Name:<input id="text1" placeholder="name"></div><br>
+            <div>Second Name:<input id="text2" placeholder="surname"></div><br>
+            <div>Age:<input id="text3" placeholder="age"></div><br>
+            <div>City:<input id="text4" placeholder="city"></div><br>
+            <div>University:<input id="text5" placeholder="university"></div><br>
+            <div>Email:<input id="text6" placeholder="email-adress"></div><br>
+            <div>Password:<input id="text7" type="password" placeholder="password"></div><br>
+            <div class="cont">
+
+                <button class="submitButton" onclick="add(); delete1();">Submit</button>
+                <button class="deleteButton" onclick="delete2();">Delete</button>
+
+            </div>
+
+        </div>
+        <div class="output">
+
+            <p id="output1"></p>
+            <p id="output2"></p>
+            <p id="output3"></p>
+            <p id="output4"></p>
+            <p id="output5"></p>
+            <p id="output6"></p>
+            <p id="output7"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
